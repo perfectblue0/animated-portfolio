@@ -10,7 +10,7 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div className="">
+      <div className="h-full overflow-scroll">
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64">
           {/* BIOGRAPHY CONTAINER */}
@@ -135,82 +135,102 @@ const AboutPage = () => {
           </div>
           {/* EXPERIENCE CONTAINER */}
           <div className="flex flex-col gap-12 justify-center pb-48">
-            <h1 className="font-bold text.2xl">EXPERIENCE</h1>
+            {/* EXPERIENCEE */}
+            <h1 className="font-bold text-2xl">EXPERIENCE</h1>
             {/* EXPERIENCE LIST */}
             <div className="">
               {/* EXPERIENCE LIST ITEM */}
-              <div className="">
-                {/* left */}
-                <div className=""></div>
-                {/* center */}
-                <div className="">
-                  {/* LINE */}
-                  <div className="">
-                    {/* LINE CIRCLE */}
-                    <div className=""></div>
-                  </div>
-                </div>
-                {/* right */}
-                <div className="">
-                  {/* CERTIFICATE TITLE */}
-                  <div className="">Certificate Title</div>
-                  {/* CERTIFICATE DESCRIPTION */}
-                  <div className="">a brief description of the certificate</div>
-                  {/* CERTIFICATE DATE */}
-                  <div className="">August 2024</div>
-                  {/* WHERE CERTIFICATE IS FROM */}
-                  <div className="">Company</div>
-                </div>
-              </div>
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
-                {/* left */}
+              <div className="flex justify-center h-48">
+                {/* LEFT */}
                 <div className="w-1/3">
-                  {/* CERTIFICATE TITLE */}
+                  {/* EXPERIENCE TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Certificate Title
+                    Berkeley Coding Bootcamp
                   </div>
-                  {/* CERTIFICATE DESCRIPTION */}
-                  <div className="">a brief description of the certificate</div>
-                  {/* CERTIFICATE DATE */}
-                  <div className="">August 2024</div>
-                  {/* WHERE CERTIFICATE IS FROM */}
-                  <div className="">Company</div>
+                  {/* EXPERIENCE DESCRIPTION */}
+                  <div className="p-3 text-sm italic">
+                    Training for full stack web development using the newest
+                    front end and back end technologies.
+                  </div>
+                  {/* EXPERIENCE DATE */}
+                  <div className="p-3 text-amber-300 text-sm font-semibold">
+                    September 2023
+                  </div>
+                  {/* EXPERIENCE COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    UC Berkeley Extension
+                  </div>
                 </div>
-                {/* center */}
-                <div className="w-1/6">
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
                   {/* LINE */}
-                  <div className="">
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className=""></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-amber-400 bg-white -left-2"></div>
                   </div>
                 </div>
-                {/* right */}
+                {/* RIGHT */}
                 <div className="w-1/3"></div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
-              <div className="">
-                {/* left */}
-                <div className="">
-                  {/* CERTIFICATE TITLE */}
-                  <div className="">Certificate Title</div>
-                  {/* CERTIFICATE DESCRIPTION */}
-                  <div className="">a brief description of the certificate</div>
-                  {/* CERTIFICATE DATE */}
-                  <div className="">August 2024</div>
-                  {/* WHERE CERTIFICATE IS FROM */}
-                  <div className="">Company</div>
-                </div>
-                {/* center */}
-                <div className="">
+              <div className="flex justify-center h-48">
+                {/* LEFT */}
+                <div className="w-1/3"></div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
                   {/* LINE */}
-                  <div className="">
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className=""></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-amber-400 bg-white -left-2"></div>
                   </div>
                 </div>
-                {/* right */}
-                <div className=""></div>
+                {/* RIGHT */}
+                <div className="w-1/3">
+                  {/* EXPERIENCE TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Deployed React.js Portfolio
+                  </div>
+                  {/* EXPERIENCE DESCRIPTION */}
+                  <div className="p-3 text-sm italic">
+                    Used React.js and vanilla CSS to create a single page
+                    application portfolio and deployed on GitHub.
+                  </div>
+                  {/* EXPERIENCE DATE */}
+                  <div className="p-3 text-amber-300 text-sm font-semibold">
+                    August 2023
+                  </div>
+                  {/* EXPERIENCE COMPANY */}
+                </div>
+              </div>
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-center h-48">
+                {/* LEFT */}
+                <div className="w-1/3">
+                  {/* EXPERIENCE TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Created MySQL Employee Tracker
+                  </div>
+                  {/* EXPERIENCE DESCRIPTION */}
+                  <div className="p-3 text-sm italic">
+                    Built a Content Management System(CMS) using Node.js,
+                    Inquirer, and MySQL.
+                  </div>
+                  {/* EXPERIENCE DATE */}
+                  <div className="p-3 text-amber-300 text-sm font-semibold">
+                    June 2023
+                  </div>
+                  {/* EXPERIENCE COMPANY */}
+                </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-amber-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3"></div>
               </div>
             </div>
           </div>
