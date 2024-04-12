@@ -1,8 +1,15 @@
 "use client";
 import Brain from "@/components/brain";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
+import { useRef } from "react";
 
 const AboutPage = () => {
+  const containerRef = useRef();
+
+  const { scrollYProgress } = useScroll({ container: containerRef });
+  // prev intial load is at 1, need to fix this bug
+  console.log(scrollYProgress.prev);
+
   return (
     <motion.div
       className="h-full"
@@ -238,7 +245,7 @@ const AboutPage = () => {
         </div>
         {/* SVG CONTAINER */}
         <div className="hidden lg:flex w-1/3 sticky top-0 z-30 xl:w-1/2">
-          <Brain />
+          <Brain scrollYProgress={scrollYProgress} />
         </div>
       </div>
     </motion.div>

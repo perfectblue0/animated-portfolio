@@ -17,6 +17,7 @@ const Homepage = () => {
             src="/womanLaptopBirds.png"
             alt="woman with birds looking at phone and holding laptop"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-contain"
           />
         </div>
