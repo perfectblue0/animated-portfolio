@@ -1,4 +1,5 @@
 "use client";
+import Brain from "@/components/brain";
 import { motion } from "framer-motion";
 
 const AboutPage = () => {
@@ -10,9 +11,9 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div className="h-full overflow-scroll">
+      <div className="h-full overflow-scroll lg:flex">
         {/* TEXT CONTAINER */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:1/2">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY TITLE */}
@@ -144,11 +145,11 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3">
                   {/* EXPERIENCE TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white p-3 text-sm font-semibold rounded-b-lg rounded-s-lg">
                     Berkeley Coding Bootcamp
                   </div>
                   {/* EXPERIENCE DESCRIPTION */}
-                  <div className="p-3 text-sm italic">
+                  <div className="p-3 text-xs italic">
                     Training for full stack web development using the newest
                     front end and back end technologies.
                   </div>
@@ -157,7 +158,7 @@ const AboutPage = () => {
                     September 2023
                   </div>
                   {/* EXPERIENCE COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  <div className="p-1 rounded bg-orange-300 text-xs font-semibold w-fit">
                     UC Berkeley Extension
                   </div>
                 </div>
@@ -187,16 +188,16 @@ const AboutPage = () => {
                 {/* RIGHT */}
                 <div className="w-1/3">
                   {/* EXPERIENCE TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white p-3 text-sm font-semibold rounded-b-lg rounded-r-lg">
                     Deployed React.js Portfolio
                   </div>
                   {/* EXPERIENCE DESCRIPTION */}
-                  <div className="p-3 text-sm italic">
+                  <div className="p-3 text-xs italic">
                     Used React.js and vanilla CSS to create a single page
                     application portfolio and deployed on GitHub.
                   </div>
                   {/* EXPERIENCE DATE */}
-                  <div className="p-3 text-amber-300 text-sm font-semibold">
+                  <div className="p-3 text-amber-300 text-xs font-semibold">
                     August 2023
                   </div>
                   {/* EXPERIENCE COMPANY */}
@@ -207,16 +208,16 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3">
                   {/* EXPERIENCE TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white p-3 text-sm font-semibold rounded-b-lg rounded-s-lg">
                     Created MySQL Employee Tracker
                   </div>
                   {/* EXPERIENCE DESCRIPTION */}
-                  <div className="p-3 text-sm italic">
+                  <div className="p-3 text-xs italic">
                     Built a Content Management System(CMS) using Node.js,
                     Inquirer, and MySQL.
                   </div>
                   {/* EXPERIENCE DATE */}
-                  <div className="p-3 text-amber-300 text-sm font-semibold">
+                  <div className="p-3 text-amber-300 text-xs font-semibold">
                     June 2023
                   </div>
                   {/* EXPERIENCE COMPANY */}
@@ -236,7 +237,9 @@ const AboutPage = () => {
           </div>
         </div>
         {/* SVG CONTAINER */}
-        <div className="hidden"></div>
+        <div className="hidden lg:flex w-1/3 sticky top-0 z-30 xl:w-1/2">
+          <Brain />
+        </div>
       </div>
     </motion.div>
   );
